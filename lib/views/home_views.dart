@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:web_app1/widgets/navigation/navigationbar.dart';
 
 class HomeView extends StatefulWidget {
   @override
@@ -8,8 +9,11 @@ class HomeView extends StatefulWidget {
 class _HomeViewState extends State<HomeView> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      
+    return Scaffold(
+      backgroundColor: Colors.white30,
+      body: Column(children: [
+        NavigationBar(),
+      ],),
     );
   }
 }
